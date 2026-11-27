@@ -23,7 +23,9 @@ programa {
 		real valor_desconto = 0.0
 		real valor_final = 0.0
 
-
+  funcao adicionar_produto () {
+    
+  }
 
 	funcao inicio() {
 		
@@ -45,8 +47,8 @@ programa {
 			escreva("Escolha uma opção: ")
 			leia(opcao_menu_principal)
 
-			escolha (opcao_menu_principal)
-			{
+			escolha (opcao_menu_principal) {
+
 				// ====================================================
 				// C - CREATE (Adicionar Itens ao Carrinho)
 				// ====================================================
