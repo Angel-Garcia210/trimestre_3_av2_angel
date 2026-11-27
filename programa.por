@@ -31,7 +31,12 @@ programa {
 
   }
 
-  
+  funcao alterar_quantidade () {
+
+    
+  }
+
+
 
 	funcao inicio() {
 		
