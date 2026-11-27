@@ -23,7 +23,6 @@
 		real valor_final = 0.0
 
 
-
    funcao adicionar_produto() {
           escreva("--- CATÁLOGO DE PRODUTOS ---\n")
 					escreva("1. Camisa Esportiva (Estoque: ", estoque_prod1, ") - R$ ", preco_prod1, "\n")
@@ -156,7 +155,7 @@
 					}
 }
 
-    funcao remover_item(){
+    funcao remover_item() {
 	   limpa()
 					escreva("--- REMOVER ITEM DO CARRINHO ---\n")
 					escreva("1. Camisa Esportiva (No carrinho: ", qtd_carrinho_prod1, ")\n")
