@@ -1,5 +1,5 @@
-programa {
-
+ programa
+  {
 // Variáveis de controle de navegação
 		inteiro opcao_menu_principal = -1
 		inteiro opcao_crud = -1
@@ -23,29 +23,43 @@ programa {
 		real valor_desconto = 0.0
 		real valor_final = 0.0
 
-  funcao adicionar_produto () {
-
-  }
-
-  funcao ver_carrinho (){
-
-  }
-
-  funcao alterar_quantidade () {
 
 
-  }
+   funcao adicionar_produto(){
 
-  funcao remover_item () {
+          escreva("--- CATÁLOGO DE PRODUTOS ---\n")
+					escreva("1. Camisa Esportiva (Estoque: ", estoque_prod1, ") - R$ ", preco_prod1, "\n")
+					escreva("2. Boné Casual      (Estoque: ", estoque_prod2, ") - R$ ", preco_prod2, "\n")
+					escreva("3. Tênis de Corrida (Estoque: ", estoque_prod3, ") - R$ ", preco_prod3, "\n")
+					escreva("Escolha o produto que deseja adicionar: ")
+             }
+             
+  funcao ver_carrinho(){
+          limpa()
+					escreva("--- MEU CARRINHO DE COMPRAS ---\n")
+					se (qtd_carrinho_prod1 == 0 e qtd_carrinho_prod2 == 0 e qtd_carrinho_prod3 == 0)
+					{
+						escreva("Seu carrinho está vazio.\n")
+					}
+					senao
+					{
+						se (qtd_carrinho_prod1 > 0) {
+							escreva("- ", qtd_carrinho_prod1, "x Camisa Esportiva (R$ ", (qtd_carrinho_prod1 * preco_prod1), ")\n")
+						}
+						se (qtd_carrinho_prod2 > 0) {
+							escreva("- ", qtd_carrinho_prod2, "x Boné Casual (R$ ", (qtd_carrinho_prod2 * preco_prod2), ")\n")
+						}
+						se (qtd_carrinho_prod3 > 0) {
+							escreva("- ", qtd_carrinho_prod3, "x Tênis de Corrida (R$ ", (qtd_carrinho_prod3 * preco_prod3), ")\n")
+						}
+					}
+				}
 
+
+
+    funcao inicio()
+    {
     
-  }
-
-
-
-	funcao inicio() {
-		
-
 		// 1. LAÇO PRINCIPAL DO SISTEMA
 		enquanto (opcao_menu_principal != 0)
 		{
@@ -63,8 +77,7 @@ programa {
 			escreva("Escolha uma opção: ")
 			leia(opcao_menu_principal)
 
-			escolha (opcao_menu_principal) {
-
+			escolha (opcao_menu_principal){
 				// ====================================================
 				// C - CREATE (Adicionar Itens ao Carrinho)
 				// ====================================================
