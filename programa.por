@@ -1,5 +1,4 @@
-  programa
-  {
+  programa {
 // Variáveis de controle de navegação
 		inteiro opcao_menu_principal = -1
 		inteiro opcao_crud = -1
@@ -25,7 +24,7 @@
 
 
 
-   funcao adicionar_produto(){
+   funcao adicionar_produto() {
           escreva("--- CATÁLOGO DE PRODUTOS ---\n")
 					escreva("1. Camisa Esportiva (Estoque: ", estoque_prod1, ") - R$ ", preco_prod1, "\n")
 					escreva("2. Boné Casual      (Estoque: ", estoque_prod2, ") - R$ ", preco_prod2, "\n")
@@ -167,8 +166,7 @@
 
 }
           
-  funcao inicio()
-  {
+  funcao inicio() {
   
 		// 1. LAÇO PRINCIPAL DO SISTEMA
 		enquanto (opcao_menu_principal != 0)
