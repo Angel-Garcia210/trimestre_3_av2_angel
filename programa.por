@@ -24,8 +24,14 @@ programa {
 		real valor_final = 0.0
 
   funcao adicionar_produto () {
-    
+
   }
+
+  funcao ver_carrinho (){
+
+  }
+
+  
 
 	funcao inicio() {
 		
