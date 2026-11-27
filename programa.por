@@ -31,7 +31,8 @@
 					escreva("2. Boné Casual      (Estoque: ", estoque_prod2, ") - R$ ", preco_prod2, "\n")
 					escreva("3. Tênis de Corrida (Estoque: ", estoque_prod3, ") - R$ ", preco_prod3, "\n")
 					escreva("Escolha o produto que deseja adicionar: ")
-             }
+
+   }
              
 
   funcao ver_carrinho(){
@@ -64,7 +65,7 @@
 					escreva("3. Tênis de Corrida (No carrinho: ", qtd_carrinho_prod3, ")\n")
 					escreva("Escolha o item para alterar a quantidade: ")
 
-             }
+    }
 
     funcao remover_item(){
 	   limpa()
@@ -74,7 +75,7 @@
 					escreva("3. Tênis de Corrida (No carrinho: ", qtd_carrinho_prod3, ")\n")
 					escreva("Escolha o item que deseja remover totalmente: ")
 
-             }
+  }
           
   funcao inicio()
   {
